@@ -24,7 +24,7 @@ function AddReview() {
 
   useEffect(() => {
     return clearTimeout(redirectToView);
-  }, []);
+  }, [redirectToView]);
 
   const showToast = (type, message) => {
     toastAddReview.current.show({
