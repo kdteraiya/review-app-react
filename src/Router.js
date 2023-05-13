@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate,
 } from "react-router-dom";
 import Header from "./components/Header";
 import { ProgressSpinner } from "primereact/progressspinner";
@@ -24,7 +23,7 @@ export default function Routing() {
         >
           <div className="main">
             <Routes>
-              <Route path="/" element={<Navigate to="/view-listing" />} />
+              <Route exact path="/" element={<ViewListing />}></Route>
               <Route exact path="/add-review/" element={<AddReview />}></Route>
               <Route
                 exact

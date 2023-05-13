@@ -11,13 +11,14 @@ import { useLocation, useNavigate } from "react-router-dom";
 const defaultFormData = {
   name: "",
   email: "",
-  rating: "",
+  rating: null,
 };
 
 function AddReview() {
   const location = useLocation();
   const navigate = useNavigate();
   const [formData] = useState(location.state || defaultFormData);
+  const [ratingSelected, setRatingSelected] = useState(true);
   const toastAddReview = useRef(null);
 
   let redirectToView;
@@ -45,6 +46,10 @@ function AddReview() {
     try {
       let existingData = localStorage.getItem("reviewData");
       let jsonData = JSON.parse(existingData);
+      console.log(data.rating)
+      if (!data.rating) {
+        setRatingSelected(false);
+      }
       if (location.state?.id) {
         data.id = location.state?.id;
         let filteredData = jsonData.filter((ele) => ele.id !== data.id);
@@ -164,13 +169,14 @@ function AddReview() {
                         className={classNames({
                           "p-invalid": fieldState.invalid,
                         })}
-                        // value={value}
-                        // onChange={(e) => setValue(e.value)}
+                      // value={value}
+                      // onChange={(e) => setValue(e.value)}
                       />
                     </>
                   )}
                 />
                 {getFormErrorMessage("rating")}
+                {ratingSelected ? <></> : <small className="p-error">Rating is required.</small>}
               </span>
             </div>
 
