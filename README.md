@@ -1,7 +1,7 @@
-# React FireBase Wiki Search 🚀
-Welcome to `React FireBase Wiki Search` uses `ReactJs`, a repository created for hands-on `practical project`.
+# Review App React 🚀
+Welcome to `Review App React` uses `ReactJs`, a repository created for hands-on `practical project`.
 
-- [🚀 Live Project Link](https://react-firebase-wiki-search.netlify.app/)
+- [🚀 Live Project Link](https://review-app-react-kdteraiya.netlify.app/)
 
 Whether you are a `beginner or an experienced React developer`, this repository is designed to help you `stay up-to-date` with the latest developments in the React community and enhance your understanding of the framework.
 
@@ -12,18 +12,18 @@ Before getting started with the project, you should have a basic understanding o
 This repository is `open-source and contributions` are always welcome! If you have a solution to a problem or a new exercise that you would like to share, feel free to `submit a pull request`. Your contribution will help make this repository a valuable resource for the `ReactJS community`.
 
 # Conclusion
-We hope that you find `React FireBase Wiki Search` useful in your `Interview preparation` to become a better `ReactJS developer`. Happy coding!
+We hope that you find `Review App React` useful in your `Interview preparation` to become a better `ReactJS developer`. Happy coding!
 
 ## 🔥 Clone this Repository
 You need to write the following commands on the terminal screen(in vscode) so that you can run this project locally.
 
 ```bash
-  git clone "https://github.com/kdteraiya/react-firebase-wiki-search.git"
+  git clone "https://github.com/kdteraiya/review-app-react.git"
 ```
 Go to the project directory
 
 ```bash
-  cd react-firebase-wiki-search
+  cd review-app-react
 ```
 Install dependencies
 ```bash
